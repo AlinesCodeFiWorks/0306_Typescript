@@ -1,5 +1,6 @@
 //Pre-class review section
 //Exercise 1 review
+// Create a simple class to model an online store. Define a Product class with properties for name, price, and a method to display its details. Then, create a subclass called Electronics that adds a warranty property. Instantiate both classes and log their details.
 class Product {
   constructor(name, price) {
     this.name = name;
@@ -29,6 +30,7 @@ const laptop = new Electronics("Laptop", 1200, 2);
 console.log(laptop.displayDetails()); // Product: Laptop, Price: $1200, Warranty: 2 years
 
 //Exercise 2 review
+// Write a function that fetches data from an API (e.g., JSONPlaceholder) and logs the title of the first post. Use a Promise chain to handle the data. Then, refactor the code to use async/await instead.
 // Using Promises
 function fetchFirstPostWithPromises() {
   fetch("https://jsonplaceholder.typicode.com/posts")
@@ -54,6 +56,7 @@ fetchFirstPostWithPromises();
 fetchFirstPostWithAsyncAwait();
 
 //Exercise 3 review
+// Write a simple function called calculateDiscount that takes a price and discount percentage as arguments and returns the discounted price. Create tests for this function using a testing framework or a custom assertion function (e.g., compare calculateDiscount(100, 20) with the expected output of 80).
 function calculateDiscount(price, discount) {
   return price - price * (discount / 100);
 }

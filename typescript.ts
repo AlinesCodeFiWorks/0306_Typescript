@@ -37,4 +37,19 @@ favoriteMovies.forEach((movie) => {
   console.log(`${movie.title} (${movie.year})`);
 });
 //Exercise 4: Understanding Union Types
+function formatMessage(input: number | string): any {
+  if (typeof input === "number") {
+    return `The number is: ${input}`;
+  } else {
+    `The string is: ${input}`;
+  }
+}
+console.log(formatMessage(42));
+console.log(formatMessage("Hello, Typescript!"));
 //Exercise 5: Exploring Generics
+function wrapInObject<T>(value: T): { data: T } {
+  return { data: value };
+}
+
+console.log(wrapInObject("Typescript is fun!"));
+console.log(wrapInObject(100));
